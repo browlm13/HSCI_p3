@@ -24,7 +24,7 @@ Matrix Chebyshev_nodes(int L, int m){
 
 	for (int i=0; i<m+1; i++){
 		double xi = Li[i][0] * cos ( ((2*i + 1)* M_PI) / (2*m + 2) );
-		nodes.push_back(xi);
+		nodes[i][0] = xi;
 	}
 
 	return nodes;

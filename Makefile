@@ -17,6 +17,7 @@ CXXFLAGS = -O -std=c++0x
 
 all:
 	$(CXX) $(CXXFLAGS) test_newton.cpp -o test_newton.exe
+	$(CXX) $(CXXFLAGS) runge_uniform.cpp -o runge_uniform.exe Lagrange.cpp -o Lagrange.exe matrix.cpp -o matrix.exe
 	
 	chmod 755 *.exe
 	chmod 755 *.txt
