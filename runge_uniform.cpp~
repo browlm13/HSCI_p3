@@ -15,13 +15,13 @@ int main(){
 	int m = 6;
 	string fname = "p6_uni.txt";
 
-	interpolate2D(n,m,fname, false);
+	interpolate2D(n,m,fname);
 
 	n = 24;
 	m = 24;
 	fname = "p24_uni.txt";
 
-	interpolate2D(n,m,fname, false);
+	interpolate2D(n,m,fname);
 
 	return 0;
 }

@@ -4,8 +4,10 @@
 #include <string>
 #include "matrix.hpp"
 
+using namespace std;
+
 double f(double x, double y);
 Matrix Chebyshev_nodes(int L, int m);
-void interpolate2D(int m, int n, std::string output_fname, bool Chebyshev);
+void interpolate2D(int m, int n, string output_fname, bool Chebyshev);
 
 #endif  // INTERPOLATE2D_DEFINED__
