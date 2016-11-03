@@ -24,13 +24,14 @@ Matrix Chebyshev_nodes(int L, int m){
 
 	for (int i=0; i<m+1; i++){
 		double xi = Li[i][0] * cos ( ((2*i + 1)* M_PI) / (2*m + 2) );
-		nodes[i][0] = xi;
+		//nodes[i][0] = xi;
+		nodes(i) = xi;
 	}
 
 	return nodes;
 }
 
-void interpolate2D(int m, int n, string output_fname, bool Chebyshev = false){
+void interpolate2D(int m, int n, string output_fname, bool Chebyshev){
 
 	//settings
 	int start_interval = -4;
@@ -38,11 +39,6 @@ void interpolate2D(int m, int n, string output_fname, bool Chebyshev = false){
 	int a_length = 201;
 	int b_length = 101;
 
-	/*
-
-		x nodes and y nodes should  have the option of being evently spaced
-		or Chebyshev nodes with given formula
-	*/
 	/*
 		Create a set of (m + 1) evenly-spaced nodes, x, over the interval [−4, 4].
 		Create a set of (n + 1) evenly-spaced nodes, x, over the interval [−4, 4].
